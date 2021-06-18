@@ -58,7 +58,7 @@ public class Main {
             System.out.println("starting the threds \n first thred:");
 
             firstThread.start();
-
+            System.out.println("-----------------------------------");
             System.out.println("seqend thread: cunsumer");
 
             secendThread.start();
@@ -66,7 +66,7 @@ public class Main {
             System.out.println("-----");
 
             // t1 finishes before t2
-          //  firstThread.join();
-          //  secendThread.join();
+           firstThread.join();
+           secendThread.join();
         }
     }
